@@ -7,8 +7,8 @@ ENV KB_VER=8.14.3
 # Include dist
 COPY dist/ /root/dist/
 #
-RUN apt update -y && \
-    apt install -y \
+RUN apt-get update -y && \
+    apt-get install -y \
             aria2 \
 	    libpaper1 \
             curl && \
@@ -47,9 +47,9 @@ RUN apt update -y && \
     chmod 755 -R /usr/share/kibana/config && \
 #
 # Clean up
-    apt purge aria2 -y && \
-    apt autoremove -y --purge && \
-    apt clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /root/.cache /root/*
+    apt-get purge aria2 -y && \
+    apt-get autoremove -y --purge && \
+    apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /root/.cache /root/*
 #
 # Healthcheck
 HEALTHCHECK --retries=10 CMD curl -s -XGET 'http://127.0.0.1:5601'
