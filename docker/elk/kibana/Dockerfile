@@ -6,7 +6,8 @@ ENV KB_VER=8.14.2
 COPY dist/ /root/dist/
 #
 RUN apt-get update -y 
-RUN apt-get install -y aria2 curl && \
+RUN apt-get install -y aria2
+RUN apt-get install -y curl
 #
 # Determine arch, get and install packages
     ARCH=$(arch) && \
