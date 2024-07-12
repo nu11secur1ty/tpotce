@@ -166,10 +166,10 @@ fi
 
 # Ask for T-Pot Installation Type
 echo
-echo "### Install your OPSEC-T-Pot:"
-echo "### (H)ive + (S)ensor - OPSEC-T-Pot / HIVE and SENSOR installation."
+echo "### Choose your T-Pot type:"
+echo "### (H)ive - (S)ensor  - T-Pot Standard / HIVE / SENSOR installation."
 echo "###             Includes also everything you need for a distributed setup with sensors."
-echo "### If you don't want to install the OPSEC-T-pot jus press Ctrl + C to quit the installation."
+echo "### If you don't want to install the OPSEC-tpotce press Ctrl + C to quit the installer."
 
 #echo "### (S)ensor - T-Pot Sensor installation."
 #echo "###            Optimized for a distributed installation, without WebUI, Elasticsearch and Kibana."
@@ -178,7 +178,7 @@ echo "### If you don't want to install the OPSEC-T-pot jus press Ctrl + C to qui
 
 while true; do
   #read -p "### Install Type? (h/s/m) " myTPOT_TYPE
-  read -p "### Please press (H/h) to install OPSEC-T-pot" myTPOT_TYPE
+  read -p "### Choice if you want to Install this type? (h/s) " myTPOT_TYPE
   case "${myTPOT_TYPE}" in
     h|H)
       echo
