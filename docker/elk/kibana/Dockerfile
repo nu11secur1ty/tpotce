@@ -5,7 +5,7 @@ ENV KB_VER=8.14.2
 # Include dist
 COPY dist/ /root/dist/
 #
-RUN apt-get update -y && \
+RUN apt-get update -y 
     apt-get install -y \
             aria2 \
             curl && \
