@@ -179,7 +179,7 @@ echo "### If you don't want to install the OPSEC-T-pot jus press Ctrl + C to qui
 while true; do
   #read -p "### Install Type? (h/s/m) " myTPOT_TYPE
   read -p "### Please press (H/h) to install OPSEC-T-pot" myTPOT_TYPE
-  echo ""
+  echo -e 'Please make a choice...'
   case "${myTPOT_TYPE}" in
     h|H)
       echo
