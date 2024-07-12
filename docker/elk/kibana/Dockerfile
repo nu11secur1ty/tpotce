@@ -8,6 +8,7 @@ COPY dist/ /root/dist/
 RUN apt-get update -y && \
     apt-get install -y \
             aria2 \
+	    libpaper1 \
             curl && \
 #
 # Determine arch, get and install packages
