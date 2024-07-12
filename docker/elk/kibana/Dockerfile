@@ -10,6 +10,7 @@ RUN apt-get update -y && \
             aria2 \
 	    libpaper1 \
             curl && \
+RUN apt-get reinstall libpaper1
 #
 # Determine arch, get and install packages
     ARCH=$(arch) && \
