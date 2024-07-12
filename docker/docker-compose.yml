@@ -8,133 +8,133 @@ services:
 # Adbhoney service
   adbhoney:
     build: adbhoney/.
-    image: "nu11secur1ty/adbhoney:24.04"
+    image: "dtagdevsec/adbhoney:24.04"
 
 # Ciscoasa service
   ciscoasa:
     build: ciscoasa/.
-    image: "nu11secur1ty/ciscoasa:24.04"
+    image: "dtagdevsec/ciscoasa:24.04"
 
 # CitrixHoneypot service
   citrixhoneypot:
     build: citrixhoneypot/.
-    image: "nu11secur1ty/citrixhoneypot:24.04"
+    image: "dtagdevsec/citrixhoneypot:24.04"
 
 # Conpot IEC104 service
   conpot_IEC104:
     build: conpot/.
-    image: "nu11secur1ty/conpot:24.04"
+    image: "dtagdevsec/conpot:24.04"
 
 # Cowrie service
   cowrie:
     build: cowrie/.
-    image: "nu11secur1ty/cowrie:24.04"
+    image: "dtagdevsec/cowrie:24.04"
 
 # Ddospot service
   ddospot:
     build: ddospot/.
-    image: "nu11secur1ty/ddospot:24.04"
+    image: "dtagdevsec/ddospot:24.04"
 
 # Dicompot service
   dicompot:
     build: dicompot/.
-    image: "nu11secur1ty/dicompot:24.04"
+    image: "dtagdevsec/dicompot:24.04"
 
 # Dionaea service
   dionaea:
     build: dionaea/.
-    image: "nu11secur1ty/dionaea:24.04"
+    image: "dtagdevsec/dionaea:24.04"
 
 # ElasticPot service
   elasticpot:
     build: elasticpot/.
-    image: "nu11secur1ty/elasticpot:24.04"
+    image: "dtagdevsec/elasticpot:24.04"
 
 # Endlessh service
   endlessh:
     build: endlessh/.
-    image: "nu11secur1ty/endlessh:24.04"
+    image: "dtagdevsec/endlessh:24.04"
 
 # Glutton service
 #  glutton:
 #    build: glutton/.
-#    image: "f0rc3ps/glutton:24.04"
+#    image: "dtagdevsec/glutton:24.04"
 
 # Hellpot service
   hellpot:
     build: hellpot/.
-    image: "nu11secur1ty/hellpot:24.04"
+    image: "dtagdevsec/hellpot:24.04"
 
 # Heralding service
   heralding:
     build: heralding/.
-    image: "nu11secur1ty/heralding:24.04"
+    image: "dtagdevsec/heralding:24.04"
 
 # Honeypots service
   honeypots:
     build: honeypots/.
-    image: "nu11secur1ty/honeypots:24.04"
+    image: "dtagdevsec/honeypots:24.04"
 
 # Honeytrap service
   honeytrap:
     build: honeytrap/.
-    image: "nu11secur1ty/honeytrap:24.04"
+    image: "dtagdevsec/honeytrap:24.04"
 
 # IPPHoney service
   ipphoney:
     build: ipphoney/.
-    image: "nu11secur1ty/ipphoney:24.04"
+    image: "dtagdevsec/ipphoney:24.04"
 
 # Log4Pot service
   log4pot:
     build: log4pot/.
-    image: "nu11secur1ty/log4pot:24.04"
+    image: "dtagdevsec/log4pot:24.04"
 
 # Mailoney service
   mailoney:
     build: mailoney/.
-    image: "nu11secur1ty/mailoney:24.04"
+    image: "dtagdevsec/mailoney:24.04"
 
 # Medpot service
   medpot:
     build: medpot/.
-    image: "nu11secur1ty/medpot:24.04"
+    image: "dtagdevsec/medpot:24.04"
 
 # Redishoneypot service
   redishoneypot:
     build: redishoneypot/.
-    image: "nu11secur1ty/redishoneypot:24.04"
+    image: "dtagdevsec/redishoneypot:24.04"
 
 # Sentrypeer service
   sentrypeer:
     build: sentrypeer/.
-    image: "nu11secur1ty/sentrypeer:24.04"
+    image: "dtagdevsec/sentrypeer:24.04"
 
 #### Snare / Tanner
 ## Tanner Redis Service
   tanner_redis:
     build: tanner/redis/.
-    image: "nu11secur1ty/redis:24.04"
+    image: "dtagdevsec/redis:24.04"
 
 ## PHP Sandbox service
   tanner_phpox:
     build: tanner/phpox/.
-    image: "nu11secur1ty/phpox:24.04"
+    image: "dtagdevsec/phpox:24.04"
 
 ## Tanner API Service
   tanner_api:
     build: tanner/tanner/.
-    image: "nu11secur1ty/tanner:24.04"
+    image: "dtagdevsec/tanner:24.04"
 
 ## Snare Service
   snare:
     build: tanner/snare/.
-    image: "nu11secur1ty/snare:24.04"
+    image: "dtagdevsec/snare:24.04"
     
 ## Wordpot Service
   wordpot:
     build: wordpot/.
-    image: "nu11secur1ty/wordpot:24.04"
+    image: "dtagdevsec/wordpot:24.04"
 
 
 ##################
@@ -144,17 +144,17 @@ services:
 # Fatt service
   fatt:
     build: fatt/.
-    image: "nu11secur1ty/fatt:24.04"
+    image: "dtagdevsec/fatt:24.04"
 
 # P0f service
   p0f:
     build: p0f/.
-    image: "nu11secur1ty/p0f:24.04"
+    image: "dtagdevsec/p0f:24.04"
 
 # Suricata service
   suricata:
     build: suricata/.
-    image: "nu11secur1ty/suricata:24.04"
+    image: "dtagdevsec/suricata:24.04"
 
 
 ##################
@@ -164,40 +164,40 @@ services:
 # T-Pot Init Service
   tpotinit:
     build: tpotinit/.
-    image: "nu11secur1ty/tpotinit:24.04"
+    image: "dtagdevsec/tpotinit:24.04"
 
 #### ELK
 ## Elasticsearch service
   elasticsearch:
     build: elk/elasticsearch/.
-    image: "nu11secur1ty/elasticsearch:24.04"
+    image: "dtagdevsec/elasticsearch:24.04"
 
 ## Kibana service
   kibana:
     build: elk/kibana/.
-    image: "nu11secur1ty/kibana:24.04"
+    image: "dtagdevsec/kibana:24.04"
 
 ## Logstash service
   logstash:
     build: elk/logstash/.
-    image: "nu11secur1ty/logstash:24.04"
+    image: "dtagdevsec/logstash:24.04"
 
 # Ewsposter service
   ewsposter:
     build: ewsposter/.
-    image: "nu11secur1ty/ewsposter:24.04"
+    image: "dtagdevsec/ewsposter:24.04"
 
 # Nginx service
   nginx:
     build: nginx/.
-    image: "nu11secur1ty/nginx:24.04"
+    image: "dtagdevsec/nginx:24.04"
 
 # Spiderfoot service
   spiderfoot:
     build: spiderfoot/.
-    image: "nu11secur1ty/spiderfoot:24.04"
+    image: "dtagdevsec/spiderfoot:24.04"
 
 # Map Web Service
   map_web:
     build: elk/map/.
-    image: "nu11secur1ty/map:24.04"
+    image: "dtagdevsec/map:24.04"
