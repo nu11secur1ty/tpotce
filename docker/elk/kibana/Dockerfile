@@ -1,9 +1,9 @@
-FROM ubuntu:20.04
-#FROM ubuntu:24.04
-#FROM ubuntu:22.04
+# FROM ubuntu:20.04
+# FROM ubuntu:24.04
+FROM ubuntu:22.04
 #
 # VARS
-ENV KB_VER=8.14.2
+ENV KB_VER=8.14.3
 # Include dist
 COPY dist/ /root/dist/
 #
