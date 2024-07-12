@@ -1,13 +1,15 @@
 FROM ubuntu:22.04
 #
 # VARS
-ENV KB_VER=8.14.2
+ENV KB_VER=8.13.4
+# ENV KB_VER=8.14.2
 # Include dist
 COPY dist/ /root/dist/
 #
-RUN apt-get update -y 
-RUN apt-get install -y aria2
-RUN apt-get install -y curl
+RUN apt-get update -y && \
+    apt-get install -y \
+            aria2 \
+            curl && \
 #
 # Determine arch, get and install packages
     ARCH=$(arch) && \
