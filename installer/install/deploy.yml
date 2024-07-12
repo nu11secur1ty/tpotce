@@ -8,9 +8,7 @@
   vars:
     local_nginx_cert_path: "~/tpotce/data/nginx/cert/nginx.crt"
     remote_cert_path: "~/tpotce/data/hive.crt"
-    # Deprecated: NO NEED!
-    # remote_sensor_yml_path: "~/tpotce/compose/sensor.yml"
-    remote_sensor_yml_path: "~/tpotce/compose/standard.yml"
+    remote_sensor_yml_path: "~/tpotce/compose/sensor.yml"
     remote_docker_compose_path: "~/tpotce/docker-compose.yml"
     env_file_path: "~/tpotce/.env"
 
