@@ -6,12 +6,9 @@ ENV KB_VER=8.14.2
 COPY dist/ /root/dist/
 #
 RUN apt-get update -y && \
-    apt-get upgrade -y \
     apt-get install -y \
             aria2 \
-	    libpaper1 \
             curl && \
-RUN apt-get reinstall libpaper1
 #
 # Determine arch, get and install packages
     ARCH=$(arch) && \
