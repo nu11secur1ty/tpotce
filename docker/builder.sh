@@ -9,7 +9,7 @@ myHUBORG_GITHUB="ghcr.io/nu11secur1ty"
 myTAG="24.04"
 #myIMAGESBASE="tpotinit adbhoney ciscoasa citrixhoneypot conpot cowrie ddospot dicompot dionaea elasticpot endlessh ewsposter fatt glutton hellpot heralding honeypots honeytrap ipphoney log4pot mailoney medpot nginx p0f redishoneypot sentrypeer spiderfoot suricata wordpot"
 myIMAGESBASE="tpotinit adbhoney ciscoasa citrixhoneypot conpot cowrie ddospot dicompot dionaea elasticpot endlessh ewsposter fatt hellpot heralding honeypots honeytrap ipphoney log4pot mailoney medpot nginx p0f redishoneypot sentrypeer spiderfoot suricata wordpot"
-### myIMAGESELK="elasticsearch kibana logstash map"
+myIMAGESELK="elasticsearch kibana logstash map"
 myIMAGESTANNER="phpox redis snare tanner"
 myBUILDERLOG="builder.log"
 myBUILDERERR="builder.err"
@@ -104,7 +104,7 @@ if [ "$1" == "build" ];
     rm -f "$myBUILDERLOG" "$myBUILDERERR" 
     echo "### Building images ..."
     fuBUILDIMAGES "" "$myIMAGESBASE" ""
-    ### fuBUILDIMAGES "elk/" "$myIMAGESELK" ""
+    fuBUILDIMAGES "elk/" "$myIMAGESELK" ""
     fuBUILDIMAGES "tanner/" "$myIMAGESTANNER" ""
 fi
 
@@ -115,6 +115,6 @@ if [ "$1" == "push" ];
     rm -f "$myBUILDERLOG" "$myBUILDERERR" 
     echo "### Building and pushing images ..."
     fuBUILDIMAGES "" "$myIMAGESBASE" "--push"
-    ### fuBUILDIMAGES "elk/" "$myIMAGESELK" "--push"
+    fuBUILDIMAGES "elk/" "$myIMAGESELK" "--push"
     fuBUILDIMAGES "tanner/" "$myIMAGESTANNER" "--push"
 fi
