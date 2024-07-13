@@ -187,7 +187,9 @@ while true; do
       echo
       echo "### Installing T-Pot Sensor."
       myTPOT_TYPE="SENSOR"
-      cp ${HOME}/tpotce/compose/sensor.yml ${HOME}/tpotce/docker-compose.yml
+      ##### It is not a good idea, the client must see what happened, and this is not working by default from Deutsche Telekom
+      ### cp ${HOME}/tpotce/compose/sensor.yml ${HOME}/tpotce/docker-compose.yml
+      cp ${HOME}/tpotce/compose/standard.yml ${HOME}/tpotce/docker-compose.yml
       myINFO="### Make sure to deploy SSH keys to this SENSOR and disable SSH password authentication.
 ### On HIVE run the tpotce/deploy.sh script to join this SENSOR to the HIVE."
       break ;;
