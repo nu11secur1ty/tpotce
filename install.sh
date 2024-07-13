@@ -171,10 +171,10 @@ echo "### (H)ive   - T-Pot Standard / HIVE installation."
 echo "###            Includes also everything you need for a distributed setup with sensors."
 ### echo "### (S)ensor - T-Pot Sensor installation."
 ### echo "###            Optimized for a distributed installation, without WebUI, Elasticsearch and Kibana."
-echo "### (M)obile - T-Pot Mobile installation."
-echo "###            Includes everything to run T-Pot Mobile (available separately)."
+### echo "### (M)obile - T-Pot Mobile installation."
+### echo "###            Includes everything to run T-Pot Mobile (available separately)."
 while true; do
-  read -p "### Install Type? (h/s/m) " myTPOT_TYPE
+  read -p "### To Install the Hive or Sensor please press: (h) " myTPOT_TYPE
   case "${myTPOT_TYPE}" in
     h|H)
       echo
