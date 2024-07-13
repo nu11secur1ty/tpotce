@@ -508,7 +508,7 @@ services:
     network_mode: "host"
     ports:
      - "64297:64297"
-    image: ${TPOT_REPO}/nginx:${TPOT_VERSION}
+    image: "nu11secur1ty/nginx:24.04"
     pull_policy: ${TPOT_PULL_POLICY}
     read_only: true
     volumes:
