@@ -689,7 +689,7 @@ services:
     mem_limit: 1g
     ports:
      - "127.0.0.1:64296:5601"
-    image: ${TPOT_REPO}/kibana:${TPOT_VERSION}
+    image: "dtagdevsec/kibana:24.04"
     pull_policy: ${TPOT_PULL_POLICY}
 
 ## Logstash service
