@@ -1,4 +1,4 @@
-# T-Pot - The All In One Multi Honeypot Platform
+# OPSEC-T-Pot - The All In One Multi Honeypot Platform
 
 ![T-Pot](doc/tpotsocial.png)
 
