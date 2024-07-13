@@ -169,8 +169,8 @@ echo
 echo "### Choose your T-Pot type:"
 echo "### (H)ive   - T-Pot Standard / HIVE installation."
 echo "###            Includes also everything you need for a distributed setup with sensors."
-echo "### (S)ensor - T-Pot Sensor installation."
-echo "###            Optimized for a distributed installation, without WebUI, Elasticsearch and Kibana."
+### echo "### (S)ensor - T-Pot Sensor installation."
+### echo "###            Optimized for a distributed installation, without WebUI, Elasticsearch and Kibana."
 echo "### (M)obile - T-Pot Mobile installation."
 echo "###            Includes everything to run T-Pot Mobile (available separately)."
 while true; do
@@ -183,23 +183,23 @@ while true; do
       cp ${HOME}/tpotce/compose/standard.yml ${HOME}/tpotce/docker-compose.yml
       myINFO=""
       break ;;
-    s|S)
-      echo
-      echo "### Installing T-Pot Sensor."
-      myTPOT_TYPE="SENSOR"
+###    s|S)
+###      echo
+###      echo "### Installing T-Pot Sensor."
+###      myTPOT_TYPE="SENSOR"
       ##### It is not a good idea, the client must see what happened, and this is not working by default from Deutsche Telekom
       ### cp ${HOME}/tpotce/compose/sensor.yml ${HOME}/tpotce/docker-compose.yml
-      cp ${HOME}/tpotce/compose/standard.yml ${HOME}/tpotce/docker-compose.yml
-      myINFO="### Make sure to deploy SSH keys to this SENSOR and disable SSH password authentication.
+###      cp ${HOME}/tpotce/compose/standard.yml ${HOME}/tpotce/docker-compose.yml
+###      myINFO="### Make sure to deploy SSH keys to this SENSOR and disable SSH password authentication.
 ### On HIVE run the tpotce/deploy.sh script to join this SENSOR to the HIVE."
-      break ;;
-    m|M)
-      echo
-      echo "### Installing T-Pot Mobile."
-      myTPOT_TYPE="MOBILE"
-      cp ${HOME}/tpotce/compose/mobile.yml ${HOME}/tpotce/docker-compose.yml
-      myINFO=""
-      break ;;
+###      break ;;
+###    m|M)
+###      echo
+###      echo "### Installing T-Pot Mobile."
+###      myTPOT_TYPE="MOBILE"
+###      cp ${HOME}/tpotce/compose/mobile.yml ${HOME}/tpotce/docker-compose.yml
+###      myINFO=""
+###      break ;;
   esac
 done
 
