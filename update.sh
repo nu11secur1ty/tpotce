@@ -165,8 +165,8 @@ function fuUPDATER () {
 	echo "### Now pulling latest docker images ..."
 	echo "######$myBLUE This might take a while, please be patient!$myWHITE"
 	fuPULLIMAGES
-	fuREMOVEOLDIMAGES "dtagdevsec/*:dev"
-	fuREMOVEOLDIMAGES "ghcr.io/telekom-security/*:dev"
+	fuREMOVEOLDIMAGES "nu11secur1ty/*:dev"
+	fuREMOVEOLDIMAGES "ghcr.io/nu11secur1ty/*:dev"
 	echo
 	echo "### If you made changes to docker-compose.yml please ensure to add them again."
 	echo "### We stored the previous version as backup in $myARCHIVE."
