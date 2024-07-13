@@ -104,7 +104,7 @@ if [ "$1" == "build" ];
     rm -f "$myBUILDERLOG" "$myBUILDERERR" 
     echo "### Building images ..."
     #fuBUILDIMAGES "" "$myIMAGESBASE" ""
-    fuBUILDIMAGES "elk/" "$myIMAGESELK" ""
+    fuBUILDIMAGES "" "$myIMAGESELK" ""
     #fuBUILDIMAGES "tanner/" "$myIMAGESTANNER" ""
 fi
 
@@ -115,6 +115,6 @@ if [ "$1" == "push" ];
     rm -f "$myBUILDERLOG" "$myBUILDERERR" 
     echo "### Building and pushing images ..."
     #fuBUILDIMAGES "" "$myIMAGESBASE" "--push"
-    fuBUILDIMAGES "elk/" "$myIMAGESELK" "--push"
+    fuBUILDIMAGES "" "$myIMAGESELK" "--push"
     #fuBUILDIMAGES "tanner/" "$myIMAGESTANNER" "--push"
 fi
